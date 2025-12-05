@@ -1,8 +1,76 @@
 .nav-bar-text {
-    font-family: Inter;
+    font-family: 'inter', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
     letter-spacing: 0%;
-
 }
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.screen {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    /* sidebar + main */
+    grid-template-rows: 1fr 1fr;
+    /* two rows for main */
+    height: 100vh;
+}
+
+.sidebar {
+    grid-row: 1 / span 2;
+    /* sidebar spans both rows */
+    background: white;
+    color: black;
+    /* padding: 1rem; */
+}
+
+.top {
+    background: #0ea5e9;
+    padding: 1rem;
+}
+
+.bottom {
+    background: #e2e8f0;
+    padding: 1rem;
+}
+
+.bottom-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal columns */
+    gap: 1rem;
+    /* spacing between cards */
+    padding: 1rem;
+}
+
+/* Basic card styling */
+.card {
+    background: #e2e8f0;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Wide cards span 2 columns */
+.card.wide {
+    grid-column: span 2;
+}
+
+/* Responsive tweak: stack on small screens */
+@media (max-width: 768px) {
+    .bottom-panel {
+        grid-template-columns: 1fr;
+        /* single column on small screens */
+    }
+
+    .card.wide {
+        grid-column: span 1;
+        /* reset span */
+    }
+}
+
