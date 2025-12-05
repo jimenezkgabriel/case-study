@@ -46,7 +46,6 @@ padding: 10px;
 align-content: center;
 color: rgb(217, 214, 214);
 text-align: center;
-border-radius: 20px;
 }
 
 #pwDiv {
@@ -59,17 +58,17 @@ padding: 10px;
 align-content: center;
 color: rgb(217,214,214);
 text-align: center;
-border-radius: 20px;
 
 }
 
 
 
-/* Form */
+#pInput {
+height: 20px ;
+width: 200px;
+}
 
-
-
-
-
-/* Group 848 */
-/* Dashboard Login */
+#usearch {
+height: 20px ;
+width: 200px;
+}
