@@ -3,12 +3,11 @@ body {
 }
 
 h1 {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 28px;
-  leading-trim: NONE;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .navbar-custom {
