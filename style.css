@@ -1,6 +1,16 @@
 body {
   background-color: #f5f7fa;
 }
+
+h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
 .navbar-custom {
   background-color: #ffffff;
   padding: 1rem 2rem;
